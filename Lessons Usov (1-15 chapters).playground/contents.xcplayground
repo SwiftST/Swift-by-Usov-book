@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Part 2 Foundetion types data'/>
+        <page name='Part 1 Basic'/>
+        <page name='Part 3 Tuples'/>
+        <page name='Part 5 Range'/>
+        <page name='Part 6 Arrays'/>
+        <page name='Part 7 Set'/>
+        <page name='Part 8 Dictionary'/>
+        <page name='Part 9 String'/>
+        <page name='Part 10.1 If, assert'/>
+        <page name='Part 10.2 Switch'/>
+        <page name='Part 10.4 for in'/>
+        <page name='Part 10.3 While'/>
+        <page name='Part 10.5 Guard'/>
+        <page name='Part 11.1 Optional Types'/>
+        <page name='Part 11.2 Unwrapping optional '/>
+        <page name='Part 11.3 Сhecking value in optional'/>
+        <page name='Part 11.4 Optional binding'/>
+        <page name='Part 11.5 nil coalescing'/>
+        <page name='Part 12 Function'/>
+        <page name='Part 13 Closures'/>
+        <page name='Part 14 Additional features'/>
+        <page name='Part 15 Lazy'/>
+    </pages>
+</playground>

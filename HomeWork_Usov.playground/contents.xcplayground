@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Array'/>
+        <page name='Range'/>
+        <page name='Tuples'/>
+        <page name='Set'/>
+        <page name='Dictionary'/>
+        <page name='String'/>
+        <page name='Flow control'/>
+        <page name='Optional'/>
+        <page name='Fuctions'/>
+        <page name='Closures'/>
+        <page name='Methods (map, mapValue...)'/>
+        <page name='Enum'/>
+        <page name='Struct'/>
+        <page name='Property'/>
+        <page name='Subscript'/>
+    </pages>
+</playground>
