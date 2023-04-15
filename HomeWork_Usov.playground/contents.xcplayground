@@ -16,5 +16,6 @@
         <page name='Struct'/>
         <page name='Property'/>
         <page name='Subscript'/>
+        <page name='init &amp;&amp; deinit'/>
     </pages>
 </playground>

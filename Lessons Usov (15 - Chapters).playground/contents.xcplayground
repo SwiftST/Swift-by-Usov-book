@@ -7,5 +7,9 @@
         <page name='Part 21.1 Class (nested types)'/>
         <page name='Part 22 Property'/>
         <page name='Part 23 Subscript'/>
+        <page name='Part 24 inheritance'/>
+        <page name='Part 25 Access control'/>
+        <page name='Part 26 Any, AnyObject'/>
+        <page name='Part 27 Init, deinit'/>
     </pages>
 </playground>
