@@ -113,6 +113,7 @@ enum Chessman {
 
 let blackPawn: Chessman = .pawn(color: .black)
 let whiteKing = Chessman.king(color: .white)
+let someColor = Chessman.Color.black
 whiteKing.self
 
 func printFigure(_ figure: Chessman) {

@@ -110,6 +110,7 @@ somePlane.rawValue
 
 let myPlanet = Planet.init(rawValue: 3)
 var anotherPlanet = Planet.init(rawValue: 11)
+var somePlanet = Planet(rawValue: 2)
 
 
 // Cвойства в перечислениях

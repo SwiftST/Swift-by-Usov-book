@@ -11,5 +11,9 @@
         <page name='Part 25 Access control'/>
         <page name='Part 26 Any, AnyObject'/>
         <page name='Part 27 Init, deinit'/>
+        <page name='Part 28 memory management'/>
+        <page name='Part 28.3 утечка памяти и ARC'/>
+        <page name='Part 28.4 ARC и ссылки в замыканиях'/>
+        <page name='Part 29 Опциональные цепочки'/>
     </pages>
 </playground>

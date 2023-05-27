@@ -72,7 +72,7 @@ struct Player {
     }
     // method
     func description() {
-        print("Player \(name) have \(victories) ")
+        print("Player \(name) have \(victories) victories")
     }
 }
 

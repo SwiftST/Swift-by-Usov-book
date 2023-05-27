@@ -91,7 +91,7 @@ var queenBlack = Chessman(type: .queen, color: .black, coordinates: ("A", 6), fi
 game.setChessman(chess: queenBlack, coordinates: ("B", 2))
 queenBlack.coordinates
 game.setChessman(chess: queenBlack, coordinates: ("A", 3))
-game["A", 3]
+game["A", 3]?.type
 game["C", 5] = queenBlack
 game["C", 5]
 game["A", 3]

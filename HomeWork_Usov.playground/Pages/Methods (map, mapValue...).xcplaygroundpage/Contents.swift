@@ -44,7 +44,7 @@ func multiplyInt(integers: [Int]) -> Int {
     }
     return integers.reduce(1) { $0 * $1 }
 }
-multiplyInt(integers: [])
+multiplyInt(integers: [2, 2, 3])
 
 
 /*
