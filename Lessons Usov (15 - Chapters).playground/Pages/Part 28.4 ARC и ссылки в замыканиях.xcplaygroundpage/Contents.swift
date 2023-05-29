@@ -34,6 +34,7 @@ if true {
     }
     closure!()
 }
+closure!()
 print("Program end")
 
 if true {

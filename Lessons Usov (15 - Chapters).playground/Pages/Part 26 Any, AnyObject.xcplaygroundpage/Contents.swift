@@ -87,6 +87,11 @@ for object in someObjects {
     print(animal.type)
 }
 
+for object in someObjects as! [Dog] {
+    object.bark()
+}
+
+
 // безопасное извлечение
 for object in someObjects {
     guard let animal = object as? Dog else {
@@ -95,6 +100,10 @@ for object in someObjects {
     print(animal.type)
 }
 
+
+for object in (someObjects as? [Dog]) ?? [] {
+    print(object.type)
+}
 
 
 //: [Next](@next)
