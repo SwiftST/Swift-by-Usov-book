@@ -5,7 +5,7 @@ import Foundation
 // Опциональные цепочки
 
 class Person {
-    // Резиденция данной первсоны
+    // Резиденция данной персоны
     var residence: Residence?
 }
 
@@ -50,7 +50,7 @@ let room = Room(square: 10)
 var residence = Residence()
 // добавляем в него комнату
 residence.rooms = [room]
-// создаем обект персона
+// создаем объект персона
 var manOne = Person()
 // добавляем в него резиденцию
 manOne.residence = residence
@@ -84,6 +84,7 @@ manOne.residence?.roomsCount()
 
 let firstRoom = manOne.residence?.rooms?[0]
 type(of: firstRoom)
+firstRoom?.square
 
 // такой доступ можно использовать и для инициализации значений
 
