@@ -15,5 +15,6 @@
         <page name='Part 28.3 утечка памяти и ARC'/>
         <page name='Part 28.4 ARC и ссылки в замыканиях'/>
         <page name='Part 29 Опциональные цепочки'/>
+        <page name='Part 30 Протоколы'/>
     </pages>
 </playground>
