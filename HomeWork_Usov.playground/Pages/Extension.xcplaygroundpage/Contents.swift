@@ -206,6 +206,34 @@ number
 34[4] //nil
  */
 
+// First variant
+//extension Int {
+//    subscript(number: Int) -> Int? {
+//        guard number > 0 else {
+//            return nil
+//        }
+//        var temp = self
+//        var count = 1
+//
+//        while temp > 0 {
+//            temp /= 10
+//            if temp > 0 {
+//                count += 1
+//            }
+//        }
+//        guard number <= count else {
+//            return nil
+//        }
+//        temp = self
+//
+//        for _ in 0..<(count - number) {
+//            temp /= 10
+//        }
+//        return temp % 10
+//
+//    }
+//}
+
 // Final variant
 
 extension Int {
