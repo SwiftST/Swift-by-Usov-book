@@ -79,46 +79,50 @@ extension String {
 var sub = "I learn Swift"
 sub.crypt()
 
-// Second variant
+// Second variant (by Usov)
+//После разделения на подстроки можно обрабатывать каждую строку отдельно
+/*
 extension String {
-    mutating func changeStr() {
-        var tempStr = ""
-        var subStr = ""
-        var count = 0
-        guard !self.isEmpty else {
-            return
-        }
-        for char in self {
-            count += 1
-            if char != " " {
-                subStr += String(char)
+    func crypt() -> String{
+        let strArr = self.split(separator:" ")
+        var resultStr = ""
+        for w in strArr {
+            // Преобразуем Substring в String
+            var word = String(w)
+            // в первую очередь меняем второй и последний символ местами
+            // это актуально только для тех слов, в которых 3 и более символов
+            if word.count >= 3 {
+                // получаем индекс второго символа
+                let secondCharIndex = word.index(after: word.startIndex)
+                // записываем второй символ во временную переменную
+                let tmp_secondChar = word[secondCharIndex]
+                // получаем индекс последнего символа
+                let lastCharIndex = word.index(before: word.endIndex)
+                // меняем местами символы
+                word.replaceSubrange(
+                    secondCharIndex..<word.index(after: secondCharIndex),
+                    with: String(word[lastCharIndex]))
+                word.replaceSubrange(
+                    lastCharIndex..<word.index(after: lastCharIndex),
+                    with: String(tmp_secondChar))
             }
-            guard char != " " && count != self.count else {
-                let oneCharInStr = String(subStr[subStr.startIndex].asciiValue!)
-                switch subStr.count {
-                case 1:
-                    tempStr += oneCharInStr
-                case 2:
-                    tempStr += oneCharInStr + subStr[subStr.index(startIndex, offsetBy: 1)...]
-                case 3:
-                    tempStr += oneCharInStr + String(subStr.last!) + String(subStr[subStr.index(subStr.startIndex, offsetBy: 1)])
-                case 4...:
-                    tempStr += oneCharInStr + String(subStr.last!) + String(describing: subStr[subStr.index(subStr.startIndex, offsetBy: 2)]...subStr[subStr.index(subStr.endIndex, offsetBy: -2)]) + String(subStr[subStr.index(subStr.startIndex, offsetBy: 1)])
-                default:
-                    break
-                }
-                subStr = ""
-                tempStr += " "
-                continue
-            }
+            //заменяем первый символ на его кодовую точку
+            //Обратите внимание на то, что кодовая точка в данном случае представлена в
+            //10-ричной системе счисления. В то время как для вставки симвоал в строку с помощью
+            //конструкции \u{} используется шестнадцатиричная система
+            let codePoint = word.unicodeScalars[word.startIndex].value
+            word.replaceSubrange(
+               word.startIndex..<word.index(after: word.startIndex),
+               with: String(codePoint))
+            resultStr += "\(word) "
         }
-        self = tempStr
+        //удаляем последний лишний пробел
+        resultStr.remove(at: resultStr.index(before: resultStr.endIndex))
+        //возвращаем результат
+        return resultStr
     }
 }
-var str = "aaa sds figaro"
-str.changeStr()
-str = ""
-str.changeStr()
+*/
 
 
 /*
