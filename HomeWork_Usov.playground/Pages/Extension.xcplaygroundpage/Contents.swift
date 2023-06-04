@@ -206,30 +206,18 @@ number
 34[4] //nil
  */
 
+// Final variant
+
 extension Int {
     subscript(number: Int) -> Int? {
-        guard number > 0 else {
+        guard number > 0, String(self).count >= number else {
             return nil
         }
         var temp = self
-        var count = 1
-        
-        while temp > 0 {
-            temp /= 10
-            if temp > 0 {
-                count += 1
-            }
-        }
-        guard number <= count else {
-            return nil
-        }
-        temp = self
-        
-        for _ in 0..<(count - number) {
+        for _ in 0..<(String(self).count - number) {
             temp /= 10
         }
         return temp % 10
-        
     }
 }
 
