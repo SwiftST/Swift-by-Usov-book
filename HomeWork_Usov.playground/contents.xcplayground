@@ -17,5 +17,6 @@
         <page name='Property'/>
         <page name='Subscript'/>
         <page name='init &amp;&amp; deinit'/>
+        <page name='Extension'/>
     </pages>
 </playground>
