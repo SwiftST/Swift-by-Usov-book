@@ -17,5 +17,7 @@
         <page name='Part 29 Опциональные цепочки'/>
         <page name='Part 30 Протоколы'/>
         <page name='Part 31 Extension'/>
+        <page name='Part 32 ПОП'/>
+        <page name='Part 33 UIKit SwiftUI'/>
     </pages>
 </playground>
