@@ -19,5 +19,7 @@
         <page name='Part 31 Extension'/>
         <page name='Part 32 ПОП'/>
         <page name='Part 33 UIKit SwiftUI'/>
+        <page name='Part 34 Generic'/>
+        <page name='Part 34.6 Opaque types'/>
     </pages>
 </playground>

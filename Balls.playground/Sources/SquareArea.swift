@@ -42,7 +42,7 @@ public class SquareArea: UIView, SquareAreaProtocol {
         // один цвет - один шарик
         for (index, oneBallColor) in ballsColor.enumerated() {
             // рассчитываем координату левого верхнего угда шарика
-            let coordinateX = 10 + (2 * radius) * index
+            let coordinateX = 300 - (2 * radius * index)
             let coordinateY = 10 + (2 * radius) * index
             // создаем экземпляр класса шарик
             let ball = Ball(color: oneBallColor, radius: radius, coordinates: (x: coordinateX, y: coordinateY))
