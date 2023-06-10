@@ -22,5 +22,6 @@
         <page name='Part 34.6 Opaque types'/>
         <page name='Part 34 Jenerik'/>
         <page name='Part 35 Обработка ошибок'/>
+        <page name='Part 36 Нетривиальное сипользование операторов'/>
     </pages>
 </playground>
