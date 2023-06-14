@@ -23,5 +23,6 @@
         <page name='Part 34 Jenerik'/>
         <page name='Part 35 Обработка ошибок'/>
         <page name='Part 36 Нетривиальное сипользование операторов'/>
+        <page name='Part 39 Паттерны проектирования'/>
     </pages>
 </playground>
