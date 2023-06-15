@@ -1,6 +1,6 @@
 import UIKit
 import Foundation
-
+// объявление протокола
 protocol BallProtocol {
     init(color: UIColor, radius: Int, coordinates: (x: Int, y: Int))
 }
